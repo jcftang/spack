@@ -35,7 +35,7 @@ class Tensorflow(CMakePackage):
 
     homepage = "https://www.tensorflow.org/"
 
-    version('e697cf7', git='https://github.com/tensorflow/tensorflow.git', commit='e697cf787b09193a6921af6d2b7db2d6c4d2a5dd')
+    version('c44601f', git='https://github.com/tensorflow/tensorflow.git', commit='c44601f5411408c324c81dd38bc8686cbd2568aa')
 
     depends_on('zlib@1.2.8')
     depends_on('giflib@5.1.4')
@@ -46,7 +46,11 @@ class Tensorflow(CMakePackage):
     depends_on('jsoncpp')#11086dd6a7eba04289944367ca82cea71299ed70
     depends_on('farmhash')#92e897b282426729f4724d91a637596c7e2fe28f-check
     depends_on('highwayhash')#dfcb97ca4fe9277bf9dc1802dd979b071896453b -check
-    depends_on('protobuf@ef927cc')#ef927cc428db7bf41d3a593a16a8f1a0fe6306c5
+    depends_on('protobuf@2.5.0')#ef927cc428db7bf41d3a593a16a8f1a0fe6306c5
+    depends_on('py-numpy')
+    depends_on('py-wheel')
+    depends_on('py-dev')
+    depends_on('python')
 
     depends_on('swig@3.0.8')
     
